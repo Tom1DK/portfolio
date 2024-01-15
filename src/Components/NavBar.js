@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
 
 import navIcon1 from '../assets/img/nav-icon3.png';
-import logo from '../assets/img/logo.png';
 
 export const NavBar = () => {
 
@@ -33,9 +31,7 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
-          </Navbar.Brand>
+
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
@@ -49,9 +45,6 @@ export const NavBar = () => {
               <div className="social-icon">
                 <a href="https://github.com/Tom1DK?tab=repositories" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="" /></a>
               </div>
-              <HashLink to='#connect'>
-                <button><span>Email Me</span></button>
-              </HashLink>
             </span>
           </Navbar.Collapse>
         </Container>

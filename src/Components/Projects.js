@@ -39,6 +39,7 @@ export const Projects = () => {
                                     <Nav.Link eventKey="first">My First Projects</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
+                                    {/* Don't forget to add UE5 proj when finished */}
                                     <Nav.Link eventKey="second">In Progress</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
